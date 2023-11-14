@@ -1,0 +1,31 @@
+[2023-11-02 10:21:27,634] {utils.py:26} INFO - Saving options.
+[2023-11-02 10:24:00,980] {utils.py:26} INFO - Saving options.
+[2023-11-02 10:24:15,894] {utils.py:48} INFO - Options saved succesfully!
+[2023-11-02 10:24:16,772] {_internal.py:187} INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.140.240:5000
+[2023-11-02 10:24:16,773] {_internal.py:187} INFO - [33mPress CTRL+C to quit[0m
+[2023-11-02 10:24:16,777] {_internal.py:187} INFO -  * Restarting with stat
+[2023-11-02 10:24:17,312] {utils.py:26} INFO - Saving options.
+[2023-11-02 10:24:17,313] {utils.py:28} INFO - Initiating with a found options.json file.
+[2023-11-02 10:24:17,332] {_internal.py:187} WARNING -  * Debugger is active!
+[2023-11-02 10:24:17,340] {_internal.py:187} INFO -  * Debugger PIN: 104-218-828
+[2023-11-02 10:26:26,691] {utils.py:26} INFO - Saving options.
+[2023-11-02 10:26:26,691] {utils.py:28} INFO - Initiating with a found options.json file.
+[2023-11-02 10:26:27,547] {_internal.py:187} INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.140.240:5000
+[2023-11-02 10:26:27,548] {_internal.py:187} INFO - [33mPress CTRL+C to quit[0m
+[2023-11-02 10:26:27,551] {_internal.py:187} INFO -  * Restarting with stat
+[2023-11-02 10:26:27,990] {utils.py:26} INFO - Saving options.
+[2023-11-02 10:26:27,991] {utils.py:28} INFO - Initiating with a found options.json file.
+[2023-11-02 10:26:28,000] {_internal.py:187} WARNING -  * Debugger is active!
+[2023-11-02 10:26:28,006] {_internal.py:187} INFO -  * Debugger PIN: 104-218-828
+[2023-11-02 10:26:36,436] {_internal.py:187} INFO - 10.0.140.240 - - [02/Nov/2023 10:26:36] "GET / HTTP/1.1" 200 -
+[2023-11-02 10:26:36,803] {_internal.py:187} INFO - 10.0.140.240 - - [02/Nov/2023 10:26:36] "GET /static/PyTrackerLogo.png HTTP/1.1" 200 -
+[2023-11-02 10:26:36,871] {_internal.py:187} INFO - 10.0.140.240 - - [02/Nov/2023 10:26:36] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[2023-11-02 10:27:00,379] {_internal.py:187} INFO - 127.0.0.1 - - [02/Nov/2023 10:27:00] "GET / HTTP/1.1" 200 -
+[2023-11-02 10:27:00,529] {_internal.py:187} INFO - 127.0.0.1 - - [02/Nov/2023 10:27:00] "GET /static/PyTrackerLogo.png HTTP/1.1" 200 -
+[2023-11-02 10:27:00,650] {_internal.py:187} INFO - 127.0.0.1 - - [02/Nov/2023 10:27:00] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
