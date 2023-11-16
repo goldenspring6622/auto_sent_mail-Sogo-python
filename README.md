@@ -55,7 +55,8 @@ Step 2: input all value email addresses, password, sheet URL, Public URL and cli
 
 Step 3: wait a minute, email will be sent to and display result below box.
 
-![image](https://github.com/goldenspring6622/auto_sent_mail-Sogo-python/assets/79317931/87bf8136-8c8c-4858-a6e5-c5f7048b827c)
+![image](https://github.com/goldenspring6622/auto_sent_mail-Sogo-python/assets/79317931/0e827dc7-d496-4501-826a-ed32b0e7b473)
+
  <br>Step 4: Click "Tracking", Attention : App and command prompt in part 1 must be running while tracking.<br>
 If recipient open mail and mail server dont block pixel tracking, then the last column in the sheet of the mail's row will be "opened"
 Then every time recipients in the sheet open the mail will be logged in file tracking_logs.txt.
