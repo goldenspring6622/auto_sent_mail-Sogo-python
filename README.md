@@ -13,9 +13,9 @@ recipient mail, and the last is the tracking status.
 ![image](https://github.com/goldenspring6622/auto_sent_mail-Sogo-python/assets/79317931/d415a6b3-8922-4af2-b7ed-718327d5b692)
 
 The mail content will be like this : 
-                        <code><p>Hello</p>
-                        <p>{content in the second column}</p>
-                        <p>Thank for reading. </p></code>
+                        <code>Hello
+                        {content in the second column}
+                        Thank for reading. </code>
 <h1>1. Get credential file:</h1>
 Credentials, for detail, can see post via link :”https://developers.google.com/workspace/guides/create-credentials”
 Detail:
