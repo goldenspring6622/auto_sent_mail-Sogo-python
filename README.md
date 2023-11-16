@@ -45,6 +45,7 @@ After that download this file.
 Using app socketxp.exe in this repo or download  at <a href="https://portal.socketxp.com/download/windows/amd64/socketxp.exe">socketxp.exe</a> 
 <br>
 Open command prompt, cd into socketxp.exe directory, for example app directory is <i>C:\Users\ADMIN\Documents\GitHub\auto_sent_mail-Sogo-python</i>, then type <code>cd C:\Users\ADMIN\Documents\GitHub\auto_sent_mail-Sogo-python</code> like this:<br> 
+
 ![image](https://github.com/goldenspring6622/auto_sent_mail-Sogo-python/assets/79317931/b41804c1-8663-4e23-983c-d0561c6ff223)
 
 Type token then press Enter.
