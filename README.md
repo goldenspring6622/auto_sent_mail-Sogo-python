@@ -41,7 +41,7 @@ Nhập hết token vừa lấy vào rồi nhấn Enter.
 Sau đó nhập tiếp socketxp connect http://127.0.0.1:5000. Màn hình hiện ra dòng Public URL cùng với một URL. Cứ để cho command prompt chạy và chuyển sang phần 2.
 ![image](https://github.com/goldenspring6622/auto_sent_mail-Sogo-python/assets/79317931/8df46d02-7b13-4b2d-bcaf-542416f4095d)
 
-<br>Phần 2 : Sử dụng app
+<h1>3. Phần 2 : Sử dụng app</h1>
 
 step 1: Click “Brower” to choose file credentials
 
