@@ -24,25 +24,26 @@ Select Tab Key -> Add key -> New Key-> JSON -> create .
 
 After that download this file.
 <h1>2. Socketxp</h1>
-- Đăng ký tài khoản tại https://portal.socketxp.com<br>
+- Register account at https://portal.socketxp.com<br>
 
 ![image](https://github.com/goldenspring6622/auto_sent_mail-Sogo-python/assets/79317931/fd675e09-51f8-4409-9d35-4e985b4369db)
 
-- Sau đó truy cập Auth Token, lấy token trong phần Login Command, có dạng như sau :<br>
+- Click Auth Token, copy the code in Login Command like this :<br>
 ![image](https://github.com/goldenspring6622/auto_sent_mail-Sogo-python/assets/79317931/8ca639ed-7e19-4c74-bec5-3b0ce64c5cfc)
-<br>
 
-Sử dụng app socketxp.exe có sẵn trong repo hoặc download socketxp.exe tại https://portal.socketxp.com/download/windows/amd64/socketxp.exe<br>
-Mở command prompt, cd vào directory chứa app socketxp.exe, ví dụ directory chứa app là <i>C:\Users\ADMIN\Documents\GitHub\auto_sent_mail-Sogo-python</i>, nhập <code>cd C:\Users\ADMIN\Documents\GitHub\auto_sent_mail-Sogo-python</code> như sau:<br> 
+<br>
+Using app socketxp.exe in this repo or download  at <a href="https://portal.socketxp.com/download/windows/amd64/socketxp.exe">socketxp.exe</a> 
+<br>
+Open command prompt, cd into socketxp.exe directory, for example app directory is <i>C:\Users\ADMIN\Documents\GitHub\auto_sent_mail-Sogo-python</i>, then type <code>cd C:\Users\ADMIN\Documents\GitHub\auto_sent_mail-Sogo-python</code> like this:<br> 
 ![image](https://github.com/goldenspring6622/auto_sent_mail-Sogo-python/assets/79317931/b41804c1-8663-4e23-983c-d0561c6ff223)
 
-Nhập hết token vừa lấy vào rồi nhấn Enter.
+Type token then press Enter.
 ![image](https://github.com/goldenspring6622/auto_sent_mail-Sogo-python/assets/79317931/e7563b93-99d2-4730-b9b5-22df88294a2e)
 
-Sau đó nhập tiếp <code>socketxp connect http://127.0.0.1:5000</code>. Màn hình hiện ra dòng Public URL cùng với một URL. Cứ để cho command prompt chạy và chuyển sang phần 2.
+Type <code>socketxp connect http://127.0.0.1:5000</code>. There should be a Public URL on your console, copy the URL. <strong>Dont shut the console down.</strong>
 ![image](https://github.com/goldenspring6622/auto_sent_mail-Sogo-python/assets/79317931/8df46d02-7b13-4b2d-bcaf-542416f4095d)
 
-<h1>3. Phần 2 : Sử dụng app</h1>
+<h1>3. Usage</h1>
 
 step 1: Click “Brower” to choose file credentials
 
