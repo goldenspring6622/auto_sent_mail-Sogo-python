@@ -6,6 +6,16 @@ auto sent mail write via python
 Read carefully before use app.
 Note: Program uses account Sogo to send email, so you need account Sogo to input in to email 
 and password.
+<h1>0. Prepare sheet</h1>
+<br>Go to GG Sheet, then create a sheet with 4 columns, the first will be the mail's title, the second is the content of mail, the third is  like this :<br>
+recipient mail, and the last is the tracking status.
+
+![image](https://github.com/goldenspring6622/auto_sent_mail-Sogo-python/assets/79317931/d415a6b3-8922-4af2-b7ed-718327d5b692)
+
+The mail content will be like this : 
+                        <code><p>Hello</p><br
+                        <p>{content in the second column}</p>
+                        <p>Thank for reading. </p></code>
 <h1>1. Get credential file:</h1>
 Credentials, for detail, can see post via link :”https://developers.google.com/workspace/guides/create-credentials”
 Detail:
