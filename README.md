@@ -6,8 +6,8 @@ Read carefully before use app.
 Note: Program uses account Sogo to send email, so you need account Sogo to input in to email 
 and password.<br>
 <h1>0. Preparation</h1>
-<strong>Clone this repo</strong>
-<br>Go to GG Sheet, then create a sheet with 4 columns, the first will be the mail's title, the second is the content of mail, the third is  like this :<br>
+<strong>- Clone this repo</strong>
+<br>- Go to GG Sheet, then create a sheet with 4 columns, the first will be the mail's title, the second is the content of mail, the third is  like this :<br>
 recipient mail, and the last is the tracking status.
 
 ![image](https://github.com/goldenspring6622/auto_sent_mail-Sogo-python/assets/79317931/5fd70e4b-aa5b-4a4a-b72a-01ef472681b0)
