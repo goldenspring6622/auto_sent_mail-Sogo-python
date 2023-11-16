@@ -6,7 +6,7 @@ from tkinter import ttk
 from tkinter import filedialog
 from tkinter import scrolledtext
 from tkinter import messagebox
-
+import pandas as pd
 from flask import Flask
 
 
@@ -16,22 +16,46 @@ from datetime import datetime
 app = Flask(__name__)
 
 
-@app.route("/<id>")
-def track_pixel(id):
-    timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-    log_entry = f"{timestamp} - Email opened "
+# @app.route("/<id>")
+# def track_pixel(id):
+#     timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+#     log_entry = f"{timestamp} - Email opened "
 
-    with open("tracking_log.txt", "a") as log_file:
-        if "favico" not in id:
-            log_file.write(id + " - " + log_entry + "\n")
+#     with open("tracking_log.txt", "a") as log_file:
+#         if "favico" not in id:
+#             log_file.write(id + " - " + log_entry + "\n")
+#     gc = gspread.service_account(filename=json_file)
+#     sh = gc.open_by_url(sheet_url)
+#     # Send an email notification (if needed)
+#     # send_email('Email Opened Notification', log_entry)
+#     worksheet = sh.get_worksheet(0)
+#     data = worksheet.get_all_values()
+#     df = pd.DataFrame(worksheet.get_all_records())
 
-    # Send an email notification (if needed)
-    # send_email('Email Opened Notification', log_entry)
+#     # Find the row with the specific string in the 3rd column
+#     search_string = id
+#     matching_row = df[search_string in df["Email"]]
 
-    transparent_pixel = ""
+#     # Check if a matching row is found
+#     if not matching_row.empty:
+#         # Get the index of the matching row
+#         index_of_matching_row = matching_row.index[0]
 
-    return transparent_pixel, 200, {"Content-Type": "image/gif"}
-    # return 200, {"Content-Type": "image/gif"}
+#         # Write something to the 4th column of that row
+#         new_value = "opened"
+#         worksheet.update_cell(
+#             index_of_matching_row + 2, 4, new_value
+#         )  # Adding 2 because indices start from 0 in Python, but 1 in Google Sheets
+
+#         print(
+#             f"Updated the 4th column of the row containing '{search_string}' to '{new_value}'."
+#         )
+#     else:
+#         print(f"No row found with '{search_string}' in the 3rd column.")
+#     transparent_pixel = ""
+
+#     return transparent_pixel, 200, {"Content-Type": "image/gif"}
+# return 200, {"Content-Type": "image/gif"}
 
 
 def validate_inputs(json_file, email_address, password, sheet_url, url):
@@ -116,6 +140,53 @@ def send_emails():
         )
     except Exception as e:
         messagebox.showerror("Lỗi", f"Có lỗi xảy ra khi gửi email: {str(e)}")
+
+    @app.route("/<id>")
+    def track_pixel(id):
+        timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        log_entry = f"{timestamp} - Email opened "
+
+        with open("tracking_log.txt", "a") as log_file:
+            if "favico" not in id:
+                log_file.write(id + " - " + log_entry + "\n")
+        gc = gspread.service_account(filename=json_file)
+        sh = gc.open_by_url(sheet_url)
+        # Send an email notification (if needed)
+        # send_email('Email Opened Notification', log_entry)
+        worksheet = sh.get_worksheet(0)
+        data = worksheet.get_all_values()
+        # df = pd.DataFrame(worksheet.get_all_records())
+
+        # # Find the row with the specific string in the 3rd column
+        search_string = id
+        # matching_row = df[df["Email"] == search_string]
+
+        # # Check if a matching row is found
+        # if not matching_row.empty:
+        #     # Get the index of the matching row
+        #     index_of_matching_row = matching_row.index[0]
+
+        #     # Write something to the 4th column of that row
+        #     new_value = "opened"
+        #     worksheet.update_cell(
+        #         index_of_matching_row + 2, 4, new_value
+        #     )  # Adding 2 because indices start from 0 in Python, but 1 in Google Sheets
+        new_value = "opened"
+        for row_index, row in enumerate(data, start=1):
+            if search_string in row[2].split(","):
+                # Update the 4th column with the desired value
+
+                worksheet.update_cell(row_index, 4, new_value)
+                print(f"Updated row {row_index} in the 4th column with: {new_value}")
+                break
+            print(
+                f"Updated the 4th column of the row containing '{search_string}' to '{new_value}'."
+            )
+        # else:
+        #     print(f"No row found with '{search_string}' in the 3rd column.")
+        transparent_pixel = ""
+
+        return transparent_pixel, 200, {"Content-Type": "image/gif"}
 
 
 def browse_file():
