@@ -39,7 +39,7 @@ Mở command prompt, cd vào directory chứa app socketxp.exe, ví dụ directo
 Nhập hết token vừa lấy vào rồi nhấn Enter.
 ![image](https://github.com/goldenspring6622/auto_sent_mail-Sogo-python/assets/79317931/e7563b93-99d2-4730-b9b5-22df88294a2e)
 
-Sau đó nhập tiếp socketxp connect http://127.0.0.1:5000. Màn hình hiện ra dòng Public URL cùng với một URL. Cứ để cho command prompt chạy và chuyển sang phần 2.
+Sau đó nhập tiếp <code>socketxp connect http://127.0.0.1:5000</code>. Màn hình hiện ra dòng Public URL cùng với một URL. Cứ để cho command prompt chạy và chuyển sang phần 2.
 ![image](https://github.com/goldenspring6622/auto_sent_mail-Sogo-python/assets/79317931/8df46d02-7b13-4b2d-bcaf-542416f4095d)
 
 <h1>3. Phần 2 : Sử dụng app</h1>
