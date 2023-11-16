@@ -25,6 +25,7 @@ Select Tab Key -> Add key -> New Key-> JSON -> create .
 After that download this file.
 <h1>2. Socketxp</h1>
 - Đăng ký tài khoản tại https://portal.socketxp.com<br>
+
 ![image](https://github.com/goldenspring6622/auto_sent_mail-Sogo-python/assets/79317931/fd675e09-51f8-4409-9d35-4e985b4369db)
 
 - Sau đó truy cập Auth Token, lấy token trong phần Login Command, có dạng như sau :<br>
