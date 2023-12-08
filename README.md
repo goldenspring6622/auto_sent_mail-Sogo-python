@@ -54,6 +54,8 @@ Detail:
 - Type <code>socketxp connect http://127.0.0.1:5000</code>. There should be a Public URL on your console, copy the URL. <strong>Dont shut the console down.</strong>
 ![image](https://github.com/goldenspring6622/auto_sent_mail-Sogo-python/assets/79317931/8df46d02-7b13-4b2d-bcaf-542416f4095d)
 
+now run the app at ><code> dist/test.exe </code> or with command : <code> python test.py  </code> <br>
+Note : To local server of TAHK, the command is <code> python mailnotusingggapi.py <account> <password> <linkggsheet> <file_path1> <file_path2> ...<file_pathn> </code>, please replace the account, password and linkgggsheet compulsorily, find_path is optional as for attachment.<br>
 <h1>3. Usage</h1>
 
 - Step 1: Click “Brower” to choose file credentials
