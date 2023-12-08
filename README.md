@@ -13,7 +13,7 @@ recipient mail, and the last is the tracking status.
 ![image](https://github.com/goldenspring6622/auto_sent_mail-Sogo-python/assets/79317931/5fd70e4b-aa5b-4a4a-b72a-01ef472681b0)
 
 The mail content will be like this : <br>
-                        <code>Hello
+                        <code>Hi {{name}}
                         {content in the second column}
                         Thank for reading. </code>
 <h1>1. Get credential file:</h1>
